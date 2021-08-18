@@ -63,6 +63,7 @@ footer {
 h2 {
 	font-size: 1.8rem;
 	font-weight: bold;
+    text-align: center;
 }
 
 .gutter-right {
@@ -80,6 +81,15 @@ header img {
 
 p {
 	margin: var(--gutter);
+}
+
+.input {
+	border-radius: 5px;
+	margin-bottom: 10px;
+	height: 30px;
+	font-size: 1.3em;
+	font-family: "Titillium Web", sans-serif;
+	text-align: center;
 }
 
 footer {
