@@ -17,17 +17,17 @@ let attempts = 3;
   // update DOM to reflect the new state  
 
   submitButton.addEventListener('click', () => {
-    let inputEl = Number(userInput.value);
+    let inputEl = Number(inputEl.value);
     attempts--;
     
     if (compareNumbers(inputEl, rightAnswer) === 0) {
         note.textContent = 'Win!';
         totalWin++;
         reset();
-    } else if (compareNumbers(inputEl, correctAnswer) === -1) {
+    } else if (compareNumbers(inputEl, rightAnswer) === -1) {
         note.textContent = 'Too Low.';
         
-    } else if (compareNumbers(inputEl, correctAnswer) === 1) {
+    } else if (compareNumbers(inputEl, rightAnswer) === 1) {
         note.textContent = 'Too High.';
     }
     
